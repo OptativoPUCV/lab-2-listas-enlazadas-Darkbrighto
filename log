@@ -161,3 +161,14 @@ Wed, Mar 26, 2025  9:05:49 AM:
  tests:  9|3
 total_score: 35/70
 b795be4
+Wed, Mar 26, 2025  9:13:46 AM: 
+ list.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushFront':
+list.c:73:11: error: unused variable 'aux' [-Werror=unused-variable]
+     Node* aux = list->head;
+           ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e012fc8

@@ -106,6 +106,10 @@ void pushCurrent(List * list, void * data) {
         aux->prev = NewNode;
         NewNode->next = aux;
     }
+
+    if (list->current->next) {
+    list->tail = NewNode;
+    }
 }
 
 void * popFront(List * list) {
@@ -120,6 +124,8 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     
+    Node* dato = list->current->data;
+
     if (list->current->next) {
         Node* der = list->current->next;
         der->prev = list->current->prev;
@@ -129,7 +135,9 @@ void * popCurrent(List * list) {
         izq->next = list->current->next;
     }
 
-    return NULL;
+    list->current = der;
+
+    return dato;
 }
 
 void cleanList(List * list) {

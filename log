@@ -78,3 +78,17 @@ list.c:61:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1.exe: all warnings being treated as errors
 Compilation failed
 cdbefa7
+Wed, Mar 26, 2025  8:56:04 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'lastList':
+list.c:60:15: error: 'Node {aka struct Node}' has no member named 'current'
+     return aux->current->data;
+               ^~
+list.c:61:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+10d29b9

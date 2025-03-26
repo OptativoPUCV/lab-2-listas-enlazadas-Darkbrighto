@@ -26,3 +26,8 @@ list.c:46:25: error: 'List {aka struct List}' has no member named 'next'
                          ^~
 Compilation failed
 957426b
+Wed, Mar 26, 2025  8:46:45 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6671621

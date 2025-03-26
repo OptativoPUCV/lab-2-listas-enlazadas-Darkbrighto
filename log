@@ -224,3 +224,9 @@ list.c:138:21: error: 'der' undeclared (first use in this function)
 list.c:138:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c858b4c
+Wed, Mar 26, 2025 10:08:36 AM: 
+ list.c | 12 ++++--------
+ 1 file changed, 4 insertions(+), 8 deletions(-)
+ tests:  11|1
+total_score: 55/70
+51de20b

@@ -55,6 +55,7 @@ void * lastList(List * list) {
     while ( aux != NULL )
     {
         aux = aux->current->next;
+        aux->current = aux;
     }
     if (aux->current != NULL)
         return aux->current->data;
